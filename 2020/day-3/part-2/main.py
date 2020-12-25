@@ -27,10 +27,11 @@ def calculate(input, right, down):
     return count
 
 def main():
-    down = 1
-    right = 3
     input = read_input("input.txt")
-    result = calculate(input, right, down)
+    right_downs = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]]
+    result = 1
+    for rd in right_downs:
+        result = result * calculate(input, rd[0], rd[1])
     print(result)
 
 if __name__ == '__main__':
