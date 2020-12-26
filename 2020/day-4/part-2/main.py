@@ -98,7 +98,13 @@ def is_valid_pid(passport):
     return False
 
 def is_valid_passport(passport):
-    if is_valid_pid(passport) and is_valid_ecl(passport) and is_valid_hcl(passport) and is_valid_hgt(passport) and is_valid_eyr(passport) and is_valid_iyr(passport) and is_valid_byr(passport):
+    if is_valid_pid(passport) and \
+       is_valid_ecl(passport) and \
+       is_valid_hcl(passport) and \
+       is_valid_hgt(passport) and \
+       is_valid_eyr(passport) and \
+       is_valid_iyr(passport) and \
+       is_valid_byr(passport):
         return True
     return False
 
