@@ -20,7 +20,7 @@ def main():
     data = []
     for line in read_input("input.txt").split("\n"):
         data.append(line.split())
-    print(compute_result(data))    
+    print(compute_result(data))
 
 if __name__ == '__main__':
     main()

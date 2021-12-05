@@ -9,7 +9,7 @@
   [numbers]
   (let [drop-1 (drop 1 numbers)
         drop-2 (drop 2 numbers)
-        triplet(map vector numbers drop-1 drop-2)]
+        triplet (map vector numbers drop-1 drop-2)]
     triplet))
 
 (defn calculate
